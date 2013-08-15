@@ -15,6 +15,7 @@
  </packages>
  <commands>
    <command name='console'>
+echo "NOZEROCONF=yes" >> /etc/sysconfig/network
 sed -i 's/ rhgb//g' /boot/grub/grub.conf
 sed -i 's/ quiet//g' /boot/grub/grub.conf
    </command>
